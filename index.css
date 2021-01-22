@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+header {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+nav {
+  height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1,
+nav ul {
+  font-size: 1.5rem;
+  flex: 1;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 100%;
+}
+nav li {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: center;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav h1 {
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+section h2 {
+  font-size: 5rem;
+}
+.home {
+  background: linear-gradient(to right top, #1dc96480, #cce0cc80, #b3adad80);
+}
+.contact {
+  background: linear-gradient(to right top, #f5202a, #68a86880, #e21f5980);
+}
+.about {
+  background: linear-gradient(to right top, #a7fa0d, #02494680, #58530380);
+}
+.projects {
+  background: linear-gradient(to right top, #03c032f6, #7dee7d80, #040c0080);
+}
+.bubble {
+  background-color: teal;
+  position: absolute;
+  z-index: -2;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+/* @media (max-width: 1345px) {
+} */
